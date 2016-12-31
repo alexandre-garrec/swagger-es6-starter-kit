@@ -53,5 +53,7 @@ Install modules
 ## Todo
 
 - [x] lint
-- [x] babel conf
+- [x] babel-node configuration
 - [ ] test in es6
+- [ ] remove config file
+- [ ] setup in folder
