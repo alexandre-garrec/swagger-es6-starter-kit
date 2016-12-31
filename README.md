@@ -18,6 +18,11 @@ Open swagger editor
  $ npm run editor
 ```
 
+Setup .env file
+```bash
+ $ npm run setup
+```
+
 Lint Javascript code with standard rules
  Open swagger editor
 ```bash
@@ -32,11 +37,21 @@ Automatically fix lint problems
 
 ## Usage
 
+Clone this repository
+
 ```bash
  $ git clone git@github.com:alexandre-garrec/swagger-es6-starter-kit.git {{ project name }}
 ```
+
+Install modules
 
 ```bash
  $ npm install
  // or warn install
 ```
+
+## Todo
+
+- [x] lint
+- [x] babel conf
+- [ ] test in es6
