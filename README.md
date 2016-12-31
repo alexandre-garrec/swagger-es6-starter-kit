@@ -1,6 +1,18 @@
 # swagger-es6-starter-kit
 swagger es6 starter kit
 
+Create swagger API in es6 with babel
+
+Features
+ - Precommit function
+ - Async / await
+ - Dotenv
+ - Sequelize with MySQL
+ - Eslint with standar rules
+ - Swagger-ui
+ - Nodemon
+ - Yarn
+
 ## Start
 
 Start server with out build project
@@ -47,19 +59,19 @@ Run test
  $ npm run test
 ```
 
-## Usage
+## Install from source
 
-Clone this repository
+First, clone the project:
 
 ```bash
- $ git clone git@github.com:alexandre-garrec/swagger-es6-starter-kit.git {{ project name }}
+  $ git clone git@github.com:alexandre-garrec/swagger-es6-starter-kit.git <my-project-name>
+  $ cd <my-project-name>
 ```
 
-Install modules
-
+Then install dependencies and check to see it works. It is recommended that you use Yarn for deterministic installs, but npm install will work just as well.
 ```bash
- $ npm install
- // or warn install
+  $ yarn install    # Install project dependencies
+  $ yarn start      # Compile and launch (same as `npm start`)
 ```
 
 ## Todo
