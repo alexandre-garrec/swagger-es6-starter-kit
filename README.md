@@ -35,6 +35,18 @@ Automatically fix lint problems
  $ npm run lint:fix
 ```
 
+Build project in dist folder
+ Open swagger editor
+```bash
+ $ npm run build
+```
+
+Run test
+ Open swagger editor
+```bash
+ $ npm run test
+```
+
 ## Usage
 
 Clone this repository
