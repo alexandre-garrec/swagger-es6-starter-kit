@@ -35,7 +35,7 @@
     "start_": "BABEL_ENV=development nodemon --watch api --exec 'BABEL_ENV=development babel-node app.js'",
     "lint": "$(npm bin)/eslint api --ext js",
     "lint:fix": "$(npm bin)/eslint api --ext js --fix",
-    "setup": "$(npm bin)/babel-node env/setup.js",
+    "setup": "$(npm bin)/babel-node setup/index.js",
     "editor": "swagger project edit",
     "dev": "$(npm bin)/nodemon app.js --exec $(npm bin)/babel-node",
     "start": "NODE_ENV=production $(npm bin)/babel-node app.js",
