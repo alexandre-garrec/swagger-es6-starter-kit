@@ -1,0 +1,10 @@
+# SERVER
+PORT=10012
+LOG=dev
+
+# BDD
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=''
+DB_NAME=casalink_dev
+DB_LOGGING=true

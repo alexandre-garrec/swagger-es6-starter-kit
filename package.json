@@ -1,0 +1,47 @@
+{
+  "name": "swagger-es6-starter-kit",
+  "version": "0.0.1",
+  "description": "Swagger API Project ES6",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.12.3",
+    "morgan": "^1.7.0",
+    "mysql": "^2.12.0",
+    "sequelize": "^3.27.0",
+    "swagger-express-mw": "^0.1.0",
+    "swagger-ui-express": "^1.0.2"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "eslint": "^3.11.1",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "husky": "^0.12.0",
+    "nodemon": "^1.11.0",
+    "should": "^7.1.0",
+    "supertest": "^1.0.0"
+  },
+  "scripts": {
+    "precommit": "npm run lint",
+    "start_": "BABEL_ENV=development nodemon --watch api --exec 'BABEL_ENV=development babel-node app.js'",
+    "lint": "$(npm bin)/eslint api --ext js",
+    "lint:fix": "$(npm bin)/eslint api --ext js --fix",
+    "setup": "$(npm bin)/babel-node env/setup.js",
+    "editor": "swagger project edit",
+    "dev": "$(npm bin)/nodemon app.js --exec $(npm bin)/babel-node",
+    "start": "NODE_ENV=production $(npm bin)/babel-node app.js",
+    "test:bundle": "$(npm bin)/babel test -d dist/test --copy-files",
+    "test": "npm run test:bundle && swagger project test dist",
+    "build": "$(npm bin)/babel app.js api -d dist/api --source-root app.js --copy-files && npm run move-app",
+    "move-app": "mv dist/api/app.js dist/app.js"
+  }
+}
