@@ -1,10 +1,8 @@
 # swagger-es6-starter-kit
 swagger es6 starter kit
 
-Create swagger API in es6 with babel
-
 Features
- - Precommit function
+ - Precommit function with husky
  - Async / await
  - Dotenv
  - Sequelize with MySQL
@@ -74,6 +72,36 @@ Then install dependencies and check to see it works. It is recommended that you 
   $ yarn start      # Compile and launch (same as `npm start`)
 ```
 
+## Application Structure
+
+```
+ |-- api',
+ |   |-- controllers',
+ |   |   |-- user.js',
+ |   |-- models',
+ |   |   |-- User.js',
+ |   |-- security',
+ |   |   |-- securityHandlers.js',
+ |   |-- swagger',
+ |   |   |-- swagger.yaml',
+ |   |-- utils',
+ |       |-- node.js',
+ |       |-- swagger.js',
+ |-- config',
+ |   |-- config.js',
+ |   |-- db.js',
+ |   |-- default.yaml',
+ |-- setup',
+ |   |-- .sample_env',
+ |   |-- index.js',
+ |-- test',
+     |-- api',
+         |-- controllers',
+         |   |-- README.md',
+         |   |-- hello_world.js',
+         |-- helpers',
+             |-- README.md',
+```
 ## Todo
 
 - [x] lint
